@@ -1,0 +1,53 @@
+2022-08-22 15:47:45,307 
+Namespace(cfg='/home/gjl/MiSLAS/config/cifar10/cifar10_imb01_stage1_mixup.yaml', opts=[])
+2022-08-22 15:47:45,308 
+alpha: 1.0
+backbone: resnet32_fe
+batch_size: 128
+cos: False
+data_path: ./data/cifar10
+dataset: cifar10
+deterministic: False
+dist_backend: nccl
+dist_url: tcp://224.66.41.62:23456
+distributed: False
+gpu: None
+head_class_idx: [0, 3]
+imb_factor: 0.1
+log_dir: logs
+lr: 0.1
+lr_factor: None
+med_class_idx: [3, 7]
+mixup: True
+mode: stage1
+model_dir: ckps
+momentum: 0.9
+multiprocessing_distributed: False
+name: cifar10_imb01_stage1_mixup
+num_classes: 10
+num_epochs: 200
+print_freq: 40
+rank: -1
+resume: 
+shift_bn: False
+smooth_head: None
+smooth_tail: None
+tail_class_idx: [7, 10]
+weight_decay: 0.0002
+workers: 16
+world_size: -1
+2022-08-22 15:47:55,510 Epoch: [0][  0/160]	Time  4.369 ( 4.369)	Loss 3.601 (3.601)	Acc@1 11.719 (11.719)	Acc@5 50.000 (50.000)
+2022-08-22 15:47:58,205 Epoch: [0][ 40/160]	Time  0.062 ( 0.172)	Loss 2.089 (2.234)	Acc@1 32.812 (24.714)	Acc@5 76.562 (71.227)
+2022-08-22 15:48:01,000 Epoch: [0][ 80/160]	Time  0.133 ( 0.122)	Loss 1.877 (2.057)	Acc@1 42.188 (27.103)	Acc@5 86.719 (73.939)
+2022-08-22 15:48:03,823 Epoch: [0][120/160]	Time  0.080 ( 0.105)	Loss 1.718 (1.977)	Acc@1 39.844 (29.494)	Acc@5 90.625 (76.433)
+2022-08-22 15:48:08,102 Eval: [ 0/79]	Time  0.664 ( 0.664)	Loss 1.771 (1.771)	Acc@1 25.000 (25.000)	Acc@5 88.281 (88.281)
+2022-08-22 15:48:10,072 Eval: [40/79]	Time  0.048 ( 0.064)	Loss 1.713 (1.800)	Acc@1 37.500 (32.679)	Acc@5 89.062 (87.214)
+2022-08-22 15:48:12,666 * Acc@1 33.000% Acc@5 87.010% HAcc 57.633% MAcc 33.750% TAcc 7.367%.
+2022-08-22 15:48:12,669 * ECE   8.429%.
+2022-08-22 15:48:12,671 Best Prec@1: 33.000% ECE: 8.429%
+
+2022-08-22 15:48:13,416 Epoch: [1][  0/160]	Time  0.706 ( 0.706)	Loss 1.786 (1.786)	Acc@1 28.906 (28.906)	Acc@5 75.000 (75.000)
+2022-08-22 15:48:16,359 Epoch: [1][ 40/160]	Time  0.069 ( 0.089)	Loss 1.700 (1.768)	Acc@1 47.656 (31.593)	Acc@5 93.750 (77.934)
+2022-08-22 15:48:19,199 Epoch: [1][ 80/160]	Time  0.069 ( 0.080)	Loss 1.794 (1.780)	Acc@1 39.844 (32.234)	Acc@5 90.625 (78.463)
+2022-08-22 15:48:22,168 Epoch: [1][120/160]	Time  0.071 ( 0.078)	Loss 1.505 (1.761)	Acc@1 50.781 (34.001)	Acc@5 95.312 (79.771)
+2022-08-22 15:48:26,428 Eval: [ 0/79]	Time  0.661 ( 0.661)	Loss 2.013 (2.013)	Acc@1 31.250 (31.250)	Acc@5 81.250 (81.250)
